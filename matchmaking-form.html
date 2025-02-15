@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetMate - Find Your Coding Buddy</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+        .container { max-width: 500px; margin: auto; }
+        .bubble-options { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+        .bubble { padding: 10px 20px; border-radius: 20px; background: #ddd; cursor: pointer; }
+        .bubble.selected { background: #007bff; color: white; }
+        .topics { text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Find Your LeetCode Buddy</h2>
+        <form>
+            <h3>Select Your Skill Level:</h3>
+            <div class="bubble-options" id="skill-level">
+                <div class="bubble" onclick="selectBubble(this, 'skill')">Beginner</div>
+                <div class="bubble" onclick="selectBubble(this, 'skill')">Intermediate</div>
+                <div class="bubble" onclick="selectBubble(this, 'skill')">Advanced</div>
+            </div>
+            
+            <h3>Preferred Intensity:</h3>
+            <div class="bubble-options" id="intensity">
+                <div class="bubble" onclick="selectBubble(this, 'intensity')">Casual</div>
+                <div class="bubble" onclick="selectBubble(this, 'intensity')">Moderate</div>
+                <div class="bubble" onclick="selectBubble(this, 'intensity')">Intense</div>
+            </div>
+            
+            <h3>Topics You Struggle With:</h3>
+            <div class="topics">
+                <label><input type="checkbox" name="topics" value="Dynamic Programming"> Dynamic Programming</label><br>
+                <label><input type="checkbox" name="topics" value="Graphs"> Graphs</label><br>
+                <label><input type="checkbox" name="topics" value="Recursion"> Recursion</label><br>
+                <label><input type="checkbox" name="topics" value="Bit Manipulation"> Bit Manipulation</label><br>
+                <label><input type="checkbox" name="topics" value="Greedy Algorithms"> Greedy Algorithms</label><br>
+            </div>
+            
+            <br>
+            <button type="submit">Find a Buddy</button>
+        </form>
+    </div>
+    
+    <script>
+        function selectBubble(element, group) {
+            document.querySelectorAll(`#${group} .bubble`).forEach(b => b.classList.remove('selected'));
+            element.classList.add('selected');
+        }
+    </script>
+</body>
+</html>
