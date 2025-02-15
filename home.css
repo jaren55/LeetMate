@@ -37,18 +37,19 @@ html {
 
 }
 
-h1 { background-color: lavender;
+h1 { 
+    
+    background-color: lavender;
     color : purple;
     font-size : 40px;
     text-align : center;
     text-shadow: lightblue;
-      margin-top: 70px;
-      margin-bottom: 30px;
+    margin-top: 70px;
+    margin-bottom: 30px;
     font-family: monospace;
-      padding: 20px
+    padding: 20px 
     
-    
-  
+
   }
   
   h2 {
@@ -59,7 +60,6 @@ h1 { background-color: lavender;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     padding: 10px;
-  
   }
   
   h3 { 
@@ -68,7 +68,6 @@ h1 { background-color: lavender;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: normal;
     margin: 20px
-  
   }
   
   p {
@@ -86,4 +85,16 @@ h1 { background-color: lavender;
     text-align: center;
     padding: 15px 32px;
     cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #success {
+    background-color: #e5c4b1;
+  }
+
+  #matchmaking {
+    padding: 25px;
   }
