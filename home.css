@@ -1,107 +1,107 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
-    .hero {
-    background-image: url('https://wallpapers.com/images/hd/neutral-aesthetic-background-1600-x-1067-vh5i8y8d09swsdu3.jpg');
-    background-size: cover;
-    background-position: center;
-    color: rgb(139, 115, 105);
-    padding: 130px;
-    text-align: center;
-  }
-
-  body {
-
-    /* Add a background color or image */
-    background-color: #f7f0e3;
-    background-image: url('');
-
-    /* Customize the font, size, and color for text*/
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    color: rebeccapurple;
-
-    /* Adjust the padding and margins */
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-
-    text-align: center;
-
+  height: 100%;
+  width: 100%;
 }
 
-h1 { 
-    
-    background-color: lavender;
-    color : purple;
-    font-size : 40px;
-    text-align : center;
-    text-shadow: lightblue;
-    margin-top: 70px;
-    margin-bottom: 30px;
-    font-family: monospace;
-    padding: 20px 
-    
+body {
+  background-color: #f7f0e3;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: #5a4636;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-  }
-  
-  h2 {
-    color : rgb(80, 41, 90) ;
-    font-size : 35px;
-    text-align : center;
-    margin: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: normal;
-    padding: 10px;
-  }
-  
-  h3 { 
-    color:rgb(91, 54, 89);
-    text-align:center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: normal;
-    margin: 20px
-  }
-  
-  p {
-    /*background-color: floralwhite*/
-    color: rgb(95, 57, 92);
-    padding: 30px;
-    line-height: 1;
-  }
+.hero {
+  background-image: url('https://wallpapers.com/images/hd/neutral-aesthetic-background-1600-x-1067-vh5i8y8d09swsdu3.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #6d5d4b;
+  padding: 130px;
+  text-align: center;
+}
 
-  button {
-    background-color: #a9927d;
-    border: none;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    padding: 15px 32px;
-    cursor: pointer;
-  }
+h1 {
+  color: #4e3d30;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-family: monospace;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-  a {
-    text-decoration: none;
-  }
+h2 {
+  color: #5a4636;
+  font-size: 35px;
+  text-align: center;
+  margin: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  padding: 10px;
+}
 
-  #success {
-    background-color: #e5c4b1;
-  }
+h3 {
+  color: #6d5d4b;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: normal;
+  margin: 20px;
+}
 
-  #matchmaking {
-    padding: 25px;
-  }
+p {
+  color: #5a4636;
+  padding: 30px;
+  line-height: 1.5;
+}
 
-  /* Navbar Styling */
+button {
+  background-color: #a9927d;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #8b7967;
+}
+
+a {
+  text-decoration: none;
+  color: #6d5d4b;
+}
+
+a:hover {
+  color: #4e3d30;
+}
+
+#success {
+  background-color: #e5c4b1;
+}
+
+#matchmaking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* This centers the content horizontally */
+  justify-content: center;  /* This centers the content vertically */
+  text-align: center;  /* Optional, to center the text inside the section */
+}
+
+#matchmaking img {
+  margin-bottom: 20px;  /* Add some space below the image */
+}
+
+
+/* Navbar Styling */
 .navbar {
-  background-color: #333;
+  background-color: #3d2f2f;
   position: fixed;
   top: 0;
   width: 100%;
@@ -129,6 +129,6 @@ h1 {
 }
 
 .navbar a:hover {
-  background-color: #555;
+  background-color: #5a4636;
   border-radius: 5px;
 }
