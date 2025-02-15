@@ -2,11 +2,88 @@ html {
     height: 100%;
     width: 100%;
   }
-  .hero {
-    background-image: url('https://external-preview.redd.it/6f26V9mpsIKs4_CJ2MgbBZxA_F2nusmTKVSEeLPRek8.jpg?width=1080&crop=smart&auto=webp&s=e43b1acc849e87e9188e306f2f1160d02c7bd614');
+    .hero {
+    background-image: url('https://wallpapers.com/images/hd/neutral-aesthetic-background-1600-x-1067-vh5i8y8d09swsdu3.jpg');
     background-size: cover;
     background-position: center;
-    color: darkolivegreen;
+    color: rgb(139, 115, 105);
     padding: 130px;
     text-align: center;
+  }
+
+  body {
+
+    /* Add a background color or image */
+    background-color: #f7f0e3;
+    background-image: url('');
+
+    /* Customize the font, size, and color for text*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: rebeccapurple;
+
+    /* Adjust the padding and margins */
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    text-align: center;
+
+}
+
+h1 { background-color: lavender;
+    color : purple;
+    font-size : 40px;
+    text-align : center;
+    text-shadow: lightblue;
+      margin-top: 70px;
+      margin-bottom: 30px;
+    font-family: monospace;
+      padding: 20px
+    
+    
+  
+  }
+  
+  h2 {
+    color : rgb(80, 41, 90) ;
+    font-size : 35px;
+    text-align : center;
+    margin: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    padding: 10px;
+  
+  }
+  
+  h3 { 
+    color:rgb(91, 54, 89);
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    margin: 20px
+  
+  }
+  
+  p {
+    /*background-color: floralwhite*/
+    color: rgb(95, 57, 92);
+    padding: 30px;
+    line-height: 1;
+  }
+
+  button {
+    background-color: #a9927d;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 32px;
+    cursor: pointer;
   }
