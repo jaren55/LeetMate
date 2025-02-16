@@ -1,0 +1,91 @@
+body {
+    background-color: #e5c4b1; /* Warm brown background */ 
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* User Card Styling */
+.user-card {
+    border: 1px solid #6d5d4b; /* Matches the warm brown tones */
+    background-color: #f7f0e3; /* Soft light background */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Quicksand', sans-serif; /* Cozy, readable font */
+}
+
+.user-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for user cards */
+#users-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 20px; /* Space between the cards */
+    justify-items: center; /* Center the cards horizontally */
+}
+
+/* Button Styling */
+button {
+    padding: 12px 24px;
+    margin: 8px;
+    background-color: #a9927d; /* Warm muted brown */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #8b7967;
+    transform: scale(1.05);
+}
+
+/* Popup Styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker for better readability */
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background-color: #f7f0e3;
+    padding: 25px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #6d5d4b;
+    font-family: 'Lora', serif; /* Elegant serif font */
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #6d5d4b;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #4e3d30;
+}

@@ -1,100 +1,144 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
-    .hero {
-    background-image: url('https://wallpapers.com/images/hd/neutral-aesthetic-background-1600-x-1067-vh5i8y8d09swsdu3.jpg');
-    background-size: cover;
-    background-position: center;
-    color: rgb(139, 115, 105);
-    padding: 130px;
-    text-align: center;
-  }
-
-  body {
-
-    /* Add a background color or image */
-    background-color: #f7f0e3;
-    background-image: url('');
-
-    /* Customize the font, size, and color for text*/
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    color: rebeccapurple;
-
-    /* Adjust the padding and margins */
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-
-    text-align: center;
-
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #f7f0e3;  /* Soft light background */
+  font-family: 'Quicksand', sans-serif;  /* Cozy sans-serif font */
+  font-size: 20px;
+  color: #5a4636;  /* Dark brown text for warmth */
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-h1 { 
-    
-    background-color: lavender;
-    color : purple;
-    font-size : 40px;
-    text-align : center;
-    text-shadow: lightblue;
-    margin-top: 70px;
-    margin-bottom: 30px;
-    font-family: monospace;
-    padding: 20px 
-    
+.hero {
+  background-image: url('https://wallpapers.com/images/hd/neutral-aesthetic-background-1600-x-1067-vh5i8y8d09swsdu3.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #6d5d4b;
+  padding: 130px;
+  text-align: center;
+  font-family: 'Lora', serif;  /* Elegant serif font for the header */
+}
 
-  }
-  
-  h2 {
-    color : rgb(80, 41, 90) ;
-    font-size : 35px;
-    text-align : center;
-    margin: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: normal;
-    padding: 10px;
-  }
-  
-  h3 { 
-    color:rgb(91, 54, 89);
-    text-align:center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: normal;
-    margin: 20px
-  }
-  
-  p {
-    /*background-color: floralwhite*/
-    color: rgb(95, 57, 92);
-    padding: 30px;
-    line-height: 1;
-  }
+h1 {
+  color: #4e3d30;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;  /* A cozy, classic serif font */
+  padding: 20px;
+  border-radius: 10px;
+}
 
-  button {
-    background-color: #a9927d;
-    border: none;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    padding: 15px 32px;
-    cursor: pointer;
-  }
+h2 {
+  color: #5a4636;
+  font-size: 35px;
+  text-align: center;
+  margin: 50px;
+  font-family: 'Lora', serif;  /* Soft serif for titles */
+  font-weight: normal;
+  padding: 10px;
+}
 
-  a {
-    text-decoration: none;
-  }
+h3 {
+  color: #6d5d4b;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-weight: normal;
+  margin: 20px;
+}
 
-  #success {
-    background-color: #e5c4b1;
-  }
+p {
+  color: #5a4636;
+  padding: 30px;
+  line-height: 1.5;
+  font-family: 'Quicksand', sans-serif;  /* Friendly, readable font */
+}
 
-  #matchmaking {
-    padding: 25px;
-  }
+button {
+  background-color: #a9927d;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;  /* Consistent cozy font */
+}
+
+button:hover {
+  background-color: #8b7967;
+}
+
+a {
+  text-decoration: none;
+  color: #e0d7ce;
+  font-family: 'Quicksand', sans-serif;  /* Friendly text for links */
+}
+
+a:hover {
+  color: #4e3d30;
+}
+
+#success {
+  background-color: #e5c4b1;
+  color: white
+}
+
+h2.success-headline {
+  font-size: 3rem; /* Adjust this value for the desired size */
+  margin-bottom: 10px; /* Adjust margin if needed to decrease spacing */
+}
+
+
+#matchmaking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* This centers the content horizontally */
+  justify-content: center;  /* This centers the content vertically */
+  text-align: center;  /* Optional, to center the text inside the section */
+}
+
+#matchmaking img {
+  margin-bottom: 20px;  /* Add some space below the image */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #3d2f2f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;  /* Consistent font for navigation */
+}
+
+.navbar a:hover {
+  background-color: #5a4636;
+  border-radius: 5px;
+}
