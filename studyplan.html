@@ -1,1 +1,174 @@
-<!-- Creates a schedule and study links for study session -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Sessions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            cursor: pointer;
+        }
+        .content {
+            display: none;
+            margin-top: 10px;
+        }
+        .session {
+            background: #e3e3e3;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        .profile-pics {
+            display: flex;
+        }
+        .profile-pics img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-left: -10px;
+            border: 2px solid white;
+        }
+        .profile-pics img:first-child {
+            margin-left: 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 8px 12px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2 onclick="toggleContent(this)">Leetcode Study Sessions</h2>
+            <div class="content">        
+                <div class="session">
+                    <p><strong>Date & Time:</strong> February 20, 2025, 5:00 PM</p>
+                    <p><strong>Topic:</strong> Dynamic Programming</p>
+                    <p><strong>Intensity:</strong> High</p>
+                    <p><strong>Time Interval:</strong> 2 hours</p>
+                    <p><strong>Question:</strong> <a href="#">Link to question</a></p>
+                    <a href="#" class="btn">Add to Calendar</a>
+                </div>
+                <div class="session">
+                    <p><strong>Date & Time:</strong> February 21, 2025, 3:00 PM</p>
+                    <p><strong>Topic:</strong> Graph Algorithms</p>
+                    <p><strong>Intensity:</strong> Medium</p>
+                    <p><strong>Time Interval:</strong> 1.5 hours</p>
+                    <p><strong>Question:</strong> <a href="#">Link to question</a></p>
+                    <a href="#" class="btn">Add to Calendar</a>
+                </div>
+                <div class="session">
+                    <p><strong>Date & Time:</strong> February 22, 2025, 6:00 PM</p>
+                    <p><strong>Topic:</strong> Arrays and Strings</p>
+                    <p><strong>Intensity:</strong> Low</p>
+                    <p><strong>Time Interval:</strong> 1 hour</p>
+                    <p><strong>Question:</strong> <a href="#">Link to question</a></p>
+                    <a href="#" class="btn">Add to Calendar</a>
+                </div>
+                <div class="session">
+                    <p><strong>Date & Time:</strong> February 23, 2025, 4:00 PM</p>
+                    <p><strong>Topic:</strong> Backtracking</p>
+                    <p><strong>Intensity:</strong> High</p>
+                    <p><strong>Time Interval:</strong> 2 hours</p>
+                    <p><strong>Question:</strong> <a href="#">Link to question</a></p>
+                    <a href="#" class="btn">Add to Calendar</a>
+                </div>
+                <div class="session">
+                    <p><strong>Date & Time:</strong> February 24, 2025, 7:00 PM</p>
+                    <p><strong>Topic:</strong> Binary Search</p>
+                    <p><strong>Intensity:</strong> Medium</p>
+                    <p><strong>Time Interval:</strong> 1.5 hours</p>
+                    <p><strong>Question:</strong> <a href="#">Link to question</a></p>
+                    <a href="#" class="btn">Add to Calendar</a>
+                </div> </div>
+        </div>
+        <div class="section">
+            <h2 onclick="toggleContent(this)">Study Buddy Sessions</h2>
+            <div class="content">  
+                <div class="session">
+                    <p><strong>Study Topics:</strong> Binary Search</p>
+                    <div class="profile-pics">
+                        <img src="profile1.jpg" alt="User 1">
+                        <img src="profile2.jpg" alt="User 2">
+                        <img src="profile3.jpg" alt="User 3">
+                    </div>
+                    <p><strong>Meeting Link:</strong> <a href="#">Join Session</a></p>
+                    <a href="#" class="btn">Add to Calendar</a>
+                </div>
+                <div class="session">
+                    <p><strong>Study Topics:</strong>Data Structures</p>
+                    <div class="profile-pics">
+                        <img src="profile4.jpg" alt="User 4">
+                        <img src="profile5.jpg" alt="User 5">
+                        <img src="profile6.jpg" alt="User 6">
+                    </div>
+                    <p><strong>Meeting Link:</strong> <a href="#">Join Session</a></p>
+                    <a href="#" class="btn">Add to Calendar</a>
+                </div>
+                <div class="session">
+                    <p><strong>Study Topics:</strong>Operating Systems</p>
+                    <div class="profile-pics">
+                        <img src="profile7.jpg" alt="User 7">
+                        <img src="profile8.jpg" alt="User 8">
+                        <img src="profile9.jpg" alt="User 9">
+                    </div>
+                    <p><strong>Meeting Link:</strong> <a href="#">Join Session</a></p>
+                    <a href="#" class="btn">Add to Calendar</a>
+                </div>
+                <div class="session">
+                    <p><strong>Study Topics:</strong> Algorithms</p>
+                    <div class="profile-pics">
+                        <img src="https://via.placeholder.com/40" alt="User 10">
+                        <img src="profile11.jpg" alt="User 11">
+                        <img src="profile12.jpg" alt="User 12">
+                    </div>
+                    <p><strong>Meeting Link:</strong> <a href="#">Join Session</a></p>
+                    <a href="#" class="btn">Add to Calendar</a>
+                </div>
+                <div class="session">
+                    <p><strong>Study Topics:</strong> Machine Learning</p>
+                    <div class="profile-pics">
+                        <img src="profile13.jpg" alt="User 13">
+                        <img src="profile14.jpg" alt="User 14">
+                        <img src="profile15.jpg" alt="User 15">
+                    </div>
+                    <p><strong>Meeting Link:</strong> <a href="#">Join Session</a></p>
+                    <a href="#" class="btn">Add to Calendar</a>
+                </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(element) {
+            const content = element.nextElementSibling;
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
