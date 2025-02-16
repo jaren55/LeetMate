@@ -10,50 +10,88 @@
 
 <body>
     <div class="container">
-        <h2>Find Your LeetCode Buddy</h2>
-        <form>
-            <h3>Select Your Skill Level:</h3>
-            <div class="bubble-options" id="skill-level">
-                <div class="bubble" onclick="selectBubble(this, 'skill')">Beginner</div>
-                <div class="bubble" onclick="selectBubble(this, 'skill')">Intermediate</div>
-                <div class="bubble" onclick="selectBubble(this, 'skill')">Advanced</div>
-            </div>
-            
-            <h3>Preferred Intensity:</h3>
-            <div class="bubble-options" id="intensity">
-                <div class="bubble" onclick="selectBubble(this, 'intensity')">Daily</div>
-                <div class="bubble" onclick="selectBubble(this, 'intensity')">3-5 Per Week</div>
-                <div class="bubble" onclick="selectBubble(this, 'intensity')">1-3 Per Week</div>
-                <div class="bubble" onclick="selectBubble(this, 'intensity')">Flexible</div>
-            </div>
-
-            <h3>Preferred Language:</h3>
-            <div class="topics">
-                <label><input type="checkbox" name="topics" value="Dynamic Programming"> Python</label><br>
-                <label><input type="checkbox" name="topics" value="Graphs"> Java</label><br>
-                <label><input type="checkbox" name="topics" value="Recursion"> C++</label><br>
-                <label><input type="checkbox" name="topics" value="Bit Manipulation"> Other</label><br>
-            </div>
-            
-            <h3>Topics You Struggle With:</h3>
-            <div class="topics">
-                <label><input type="checkbox" name="topics" value="Dynamic Programming"> Dynamic Programming</label><br>
-                <label><input type="checkbox" name="topics" value="Graphs"> Graphs</label><br>
-                <label><input type="checkbox" name="topics" value="Recursion"> Recursion</label><br>
-                <label><input type="checkbox" name="topics" value="Bit Manipulation"> Bit Manipulation</label><br>
-                <label><input type="checkbox" name="topics" value="Greedy Algorithms"> Greedy Algorithms</label><br>
-            </div>
-            
-            <br>
-            <button><a href="matches.html">Submit</a></button>
-        </form>
+        <h1>Find Your LeetCode Buddy</h1>
     </div>
+
+    <div class="create-account">
+        
+        <div class="create-account-container">
+
+            <form class="create-an-account-form">
+                
+                <div class="account-fill-in-info">
+
+                   
+
+                    <h3>Select Your Skill Level:</h3>
+                    <div class="bubble-options" id="skill-level">
+                        <div class="bubble" onclick="selectBubble(this, 'skill-level')">Beginner</div>
+                        <div class="bubble" onclick="selectBubble(this, 'skill-level')">Intermediate</div>
+                        <div class="bubble" onclick="selectBubble(this, 'skill-level')">Advanced</div>
+                    </div>
+                    
+                    <h3>Preferred Intensity:</h3>
+                    <div class="bubble-options" id="intensity">
+                        <div class="bubble" onclick="selectBubble(this, 'intensity')">Casual</div>
+                        <div class="bubble" onclick="selectBubble(this, 'intensity')">Moderate</div>
+                        <div class="bubble" onclick="selectBubble(this, 'intensity')">Intense</div>
+                    </div>
+                    
+                    <h3>Preferred Study Plan:</h3>
+                    <div class="bubble-options" id="study-plan">
+                        <div class="bubble" onclick="selectBubble(this, 'study-plan')">Weekends Only</div>
+                        <div class="bubble" onclick="selectBubble(this, 'study-plan')">Daily</div>
+                        <div class="bubble" onclick="selectBubble(this, 'study-plan')">2-5 Times a Week</div>
+                        <div class="bubble" onclick="selectBubble(this, 'study-plan')">Flexible</div>
+                    </div>
+                    
+                    
+                        <h3>Topics You Struggle With:</h3>
+                        <div class="topics">
+                            <label><input type="checkbox" name="topics" value="Dynamic Programming"> Dynamic Programming</label>
+                            <label><input type="checkbox" name="topics" value="Graphs"> Graphs</label>
+                            <label><input type="checkbox" name="topics" value="Recursion"> Recursion</label>
+                            <label><input type="checkbox" name="topics" value="Bit Manipulation"> Bit Manipulation</label>
+                            <label><input type="checkbox" name="topics" value="Greedy Algorithms"> Greedy Algorithms</label>
+                        </div>  
+                    
+                        <h3>Preferred Language:</h3>
+                        <div class="topics">
+                            <label><input type="checkbox" name="language" value="Python"> Python</label>
+                            <label><input type="checkbox" name="language" value="Java"> Java</label>
+                            <label><input type="checkbox" name="language" value="C++"> C++</label>
+                            <label><input type="checkbox" name="language" value="Other"> Other</label>
+                        </div> 
+                    
+                        <a href="matches.html" class="button">Submit</a>
+
+
+                </div>
+            </form>
+        </div> 
     
+    </div>
+
+
+
+
+
     <script>
-        function selectBubble(element, group) {
-            document.querySelectorAll(`#${group} .bubble`).forEach(b => b.classList.remove('selected'));
-            element.classList.add('selected');
-        }
+
+    function selectBubble(element, group) {
+    // Select all bubbles within the correct group and remove 'selected' class
+    document.querySelectorAll(`.bubble-options#${group} .bubble`).forEach(b => b.classList.remove('selected'));
+
+    // Add 'selected' class to the clicked bubble
+    element.classList.add('selected');
+}
+
+
+        document.getElementById("submitButton").addEventListener("click", function() {
+            window.location.href = "matches.html";
+        });
+
+
     </script>
 </body>
 </html>
