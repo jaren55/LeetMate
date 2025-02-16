@@ -2,12 +2,11 @@ html {
   height: 100%;
   width: 100%;
 }
-
 body {
-  background-color: #f7f0e3;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 16px;
-  color: #5a4636;
+  background-color: #f7f0e3;  /* Soft light background */
+  font-family: 'Quicksand', sans-serif;  /* Cozy sans-serif font */
+  font-size: 20px;
+  color: #5a4636;  /* Dark brown text for warmth */
   margin: 0;
   padding: 0;
   text-align: center;
@@ -20,6 +19,7 @@ body {
   color: #6d5d4b;
   padding: 130px;
   text-align: center;
+  font-family: 'Lora', serif;  /* Elegant serif font for the header */
 }
 
 h1 {
@@ -29,7 +29,7 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-top: 70px;
   margin-bottom: 30px;
-  font-family: monospace;
+  font-family: 'Playfair Display', serif;  /* A cozy, classic serif font */
   padding: 20px;
   border-radius: 10px;
 }
@@ -39,7 +39,7 @@ h2 {
   font-size: 35px;
   text-align: center;
   margin: 50px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Lora', serif;  /* Soft serif for titles */
   font-weight: normal;
   padding: 10px;
 }
@@ -47,7 +47,7 @@ h2 {
 h3 {
   color: #6d5d4b;
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Lora', serif;
   font-weight: normal;
   margin: 20px;
 }
@@ -56,6 +56,7 @@ p {
   color: #5a4636;
   padding: 30px;
   line-height: 1.5;
+  font-family: 'Quicksand', sans-serif;  /* Friendly, readable font */
 }
 
 button {
@@ -67,6 +68,7 @@ button {
   padding: 15px 32px;
   cursor: pointer;
   border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;  /* Consistent cozy font */
 }
 
 button:hover {
@@ -75,7 +77,8 @@ button:hover {
 
 a {
   text-decoration: none;
-  color: #6d5d4b;
+  color: #e0d7ce;
+  font-family: 'Quicksand', sans-serif;  /* Friendly text for links */
 }
 
 a:hover {
@@ -84,7 +87,14 @@ a:hover {
 
 #success {
   background-color: #e5c4b1;
+  color: white
 }
+
+h2.success-headline {
+  font-size: 3rem; /* Adjust this value for the desired size */
+  margin-bottom: 10px; /* Adjust margin if needed to decrease spacing */
+}
+
 
 #matchmaking {
   display: flex;
@@ -97,7 +107,6 @@ a:hover {
 #matchmaking img {
   margin-bottom: 20px;  /* Add some space below the image */
 }
-
 
 /* Navbar Styling */
 .navbar {
@@ -126,6 +135,7 @@ a:hover {
   color: white;
   padding: 10px 15px;
   font-size: 18px;
+  font-family: 'Quicksand', sans-serif;  /* Consistent font for navigation */
 }
 
 .navbar a:hover {
