@@ -1,1 +1,35 @@
 
+/* Navbar Styling */
+.navbar {
+    background-color: #3d2f2f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;  /* Consistent font for navigation */
+  }
+  
+  .navbar a:hover {
+    background-color: #5a4636;
+    border-radius: 5px;
+  }

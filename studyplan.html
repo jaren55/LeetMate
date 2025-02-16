@@ -4,65 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Sessions</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .container {
-            width: 80%;
-            max-width: 900px;
-        }
-        .section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .section h2 {
-            cursor: pointer;
-        }
-        .content {
-            display: none;
-            margin-top: 10px;
-        }
-        .session {
-            background: #e3e3e3;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 10px;
-        }
-        .profile-pics {
-            display: flex;
-        }
-        .profile-pics img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-left: -10px;
-            border: 2px solid white;
-        }
-        .profile-pics img:first-child {
-            margin-left: 0;
-        }
-        .btn {
-            display: inline-block;
-            padding: 8px 12px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-    </style>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbI-4YOIHhLSjSykVScwUb-VqZz9SyWWjvFA&s" type="image/png">
+    <link rel="stylesheet" href="studyplan.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="requests.html">Buddies</a></li>
+            <li><a href="studyplan.html">Study Plan</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <div class="section">
             <h2 onclick="toggleContent(this)">Leetcode Study Sessions</h2>
