@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests</title>
+    <style>
+        body {
+    font-family: 'Quicksand', sans-serif; /* Cozy, readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #f7f0e3; /* Light, warm background */
+}
+
+.container {
+    width: 85%;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #6d5d4b; /* Warm brown color */
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Lora', serif; /* Elegant serif font */
+}
+
+.category {
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category h2 {
+    color: #6d5d4b; /* Warm brown color */
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 'Quicksand', sans-serif; /* Cozy font */
+}
+
+.sublists {
+    display: flex;
+    flex-direction: column;
+}
+
+.request {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out;
+    font-family: 'Quicksand', sans-serif; /* Cozy font */
+}
+
+.request:hover {
+    transform: translateY(-5px);
+}
+
+.request-info {
+    display: flex;
+    align-items: center;
+}
+
+.request-info span {
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.request-info .name {
+    font-size: 16px;
+    color: #6d5d4b; /* Warm brown */
+}
+
+.request-info .username {
+    font-size: 14px;
+    color: #7f8c8d; /* Neutral gray */
+}
+
+.request-info .time {
+    font-size: 13px;
+    color: #95a5a6; /* Lighter gray */
+}
+
+.request-info .skill {
+    font-size: 13px;
+    color: #2ecc71; /* Green for skill level */
+}
+
+.request .status {
+    display: flex;
+    gap: 10px;
+}
+
+.button-x, .button-check {
+    padding: 6px 12px;
+    border-radius: 15px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-x {
+    background-color: #e74c3c; /* Red for reject */
+    color: white;
+}
+
+.button-x:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.button-check {
+    background-color: #27ae60; /* Green for accept */
+    color: white;
+}
+
+.button-check:hover {
+    background-color: #2ecc71; /* Lighter green on hover */
+}
+
+.pending {
+    background-color: #f7f0e3; /* Light warm background */
+}
+
+.accepted {
+    background-color: #a3e4d7; /* Soft green for accepted */
+}
+
+.rejected {
+    background-color: #f9c0c0; /* Light red for rejected */
+}
+
+.meeting-link {
+    color: #2980b9; /* Blue link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.meeting-link:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Requests Page</h1>
+
+    <div class="category">
+        <h2>Your Requests (Sent to You)</h2>
+        <div class="sublists">
+            <h3>Pending</h3>
+            <div class="request pending">
+                <div class="request-info">
+                    <span class="name">John Doe</span>
+                    <span class="username">@johndoe123</span>
+                    <span class="skill">Skill: Intermediate</span>
+                    <span class="time">Feb 15, 3:00 PM</span>
+                </div>
+                <div class="status">
+                    <button class="button-x">Reject</button>
+                    <button class="button-check">Accept</button>
+                </div>
+            </div>
+            <div class="request pending">
+                <div class="request-info">
+                    <span class="name">Jane Smith</span>
+                    <span class="username">@janesmith456</span>
+                    <span class="skill">Skill: Beginner</span>
+                    <span class="time">Feb 15, 4:15 PM</span>
+                </div>
+                <div class="status">
+                    <button class="button-x">Reject</button>
+                    <button class="button-check">Accept</button>
+                </div>
+            </div>
+            <div class="request pending">
+                <div class="request-info">
+                    <span class="name">Mark Spencer</span>
+                    <span class="username">@markspencer789</span>
+                    <span class="skill">Skill: Expert</span>
+                    <span class="time">Feb 15, 5:30 PM</span>
+                </div>
+                <div class="status">
+                    <button class="button-x">Reject</button>
+                    <button class="button-check">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Others' Requests (Sent by You)</h2>
+        <div class="sublists">
+            <h3>Pending</h3>
+            <div class="request pending">
+                <div class="request-info">
+                    <span class="name">Sarah Lee</span>
+                    <span class="username">@sarahlee789</span>
+                    <span class="skill">Skill: Intermediate</span>
+                    <span class="time">Feb 14, 10:00 AM</span>
+                </div>
+            </div>
+            <div class="request pending">
+                <div class="request-info">
+                    <span class="name">David Brown</span>
+                    <span class="username">@davidbrown010</span>
+                    <span class="skill">Skill: Beginner</span>
+                    <span class="time">Feb 14, 11:15 AM</span>
+                </div>
+            </div>
+
+            <h3>Accepted</h3>
+            <div class="request accepted">
+                <div class="request-info">
+                    <span class="name">Rachel Adams</span>
+                    <span class="username">@racheladams456</span>
+                    <span class="skill">Skill: Advanced</span>
+                    <span class="time">Feb 14, 5:45 PM</span>
+                </div>
+                <a class="meeting-link" href="#">Meeting Link</a>
+            </div>
+
+            <h3>Rejected</h3>
+            <div class="request rejected">
+                <div class="request-info">
+                    <span class="name">Tom Green</span>
+                    <span class="username">@tomgreen555</span>
+                    <span class="skill">Skill: Expert</span>
+                    <span class="time">Feb 14, 8:00 PM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
